@@ -1,11 +1,14 @@
 .statistic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    margin-left: 10px;
-    border: 1px solid #808080;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin-left: 10px;
+  border: 1px solid #808080;
+  padding: 0;
+  -webkit-box-shadow: 0px 8px 21px -12px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 8px 21px -12px rgba(66, 68, 90, 1);
+  box-shadow: 0px 8px 21px -12px rgba(66, 68, 90, 1);
 }
 
 .statList {
@@ -34,9 +37,9 @@
   padding: 8px;
 }
 .label {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 .percentage {
-    color: black;
-    font-weight: 700;
+  color: black;
+  font-weight: 700;
 }
