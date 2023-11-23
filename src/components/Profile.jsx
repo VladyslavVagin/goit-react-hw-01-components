@@ -1,35 +1,36 @@
-import React from 'react';
+import React from 'react'
 
-const Profile = (props) => {
+const Profile = (user) => {
+  const {avatar, username, tag, location, stats: {followers, views, likes}} = user;
   return (
-    <div class="profile">
-      <div class="description">
+    <div className="profile">
+      <div className="description">
         <img
-          src={props.avatar}
-          alt={props.username}
-          class="avatar"
+          src={avatar}
+          alt={username}
+          className="avatar"
         />
-        <p class="name">{props.username}</p>
-        <p class="tag">@{props.tag}</p>
-        <p class="location">{props.location}</p>
+        <p className="name">{username}</p>
+        <p className="tag">@{tag}</p>
+        <p className="location">{location}</p>
       </div>
 
-      <ul class="stats">
+      <ul className="stats">
         <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{props.stats.followers}</span>
+          <span className="label">Followers</span>
+          <span className="quantity">{followers}</span>
         </li>
         <li>
-          <span class="label">Views</span>
-          <span class="quantity">{props.stats.views}</span>
+          <span className="label">Views</span>
+          <span className="quantity">{views}</span>
         </li>
         <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{props.stats.likes}</span>
+          <span className="label">Likes</span>
+          <span className="quantity">{likes}</span>
         </li>
       </ul>
     </div>
   );
-};
+}
 
-export default Profile;
+export default Profile
