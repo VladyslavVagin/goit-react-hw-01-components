@@ -16,7 +16,7 @@ const Profile = (user) => {
         <p className={css.location}>{location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className={css.stats}>
         <li>
           <span className={css.label}>Followers</span>
           <span className={css.quantity}>{followers}</span>
