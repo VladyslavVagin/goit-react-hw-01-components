@@ -10,7 +10,7 @@ import Wrapper from './Wrapper/Wrapper';
 
 export const App = () => {
   return (
-    <div>
+    <>
         <Wrapper>
           {Profile(user)}
           <Statistics title="Upload stats" stats={data} />
@@ -18,6 +18,6 @@ export const App = () => {
         </Wrapper>
         {FriendList(friends)}
         {TransactionHistory(transactions)}
-    </div>
+    </>
   );
 };
