@@ -1,5 +1,6 @@
 .transactionHistory {
-  width: 60%;
+  min-width: 300px;
+  max-width: 60%;
   font-size: 16px;
   display: flex;
   flex-direction: column;
