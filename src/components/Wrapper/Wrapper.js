@@ -4,8 +4,7 @@ const Wrapper = styled.div({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    rowGap: '90px',
-    columnGap: '20px',
+    rowGap: '18px',
 })
 
 export default Wrapper
