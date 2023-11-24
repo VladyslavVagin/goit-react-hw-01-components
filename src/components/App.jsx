@@ -6,18 +6,15 @@ import transactions from '../path/transactions.json';
 import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
-import Wrapper from './Wrapper/Wrapper';
 
 export const App = () => {
   return (
     <>
-        <Wrapper>
-          {Profile(user)}
-          <Statistics title="Upload stats" stats={data} />
-          {/* <Statistics stats={data} /> */}
-        </Wrapper>
-        {FriendList(friends)}
-        {TransactionHistory(transactions)}
+      {Profile(user)}
+      <Statistics title="Upload stats" stats={data} />
+      {/* <Statistics stats={data} /> */}
+      {FriendList(friends)}
+      {TransactionHistory(transactions)}
     </>
   );
 };
